@@ -77,10 +77,25 @@ Console.WriteLine($"La somma dell'array è: {somma}");
 //CHECK STRINGA PALINDROMA
 string parola = "anna";
 string rovesciata = "";
-
 for (int i = parola.Length - 1; i >= 0; i--)
 {
     rovesciata += parola[i];
 }
-
 Console.WriteLine(parola == rovesciata ? "È palindroma" : "Non è palindroma");
+
+//CHECK VOCALI RIPETUTE
+string parola = "aiuola";
+string vocali = "aeiou";
+bool trovata = false;
+for (int i = 1; i < parola.Length; i++)
+{
+    if (parola[i] == parola[i - 1] && vocali.Contains(parola[i]))
+    {
+        Console.WriteLine($"Vocale '{parola[i]}' ripetuta in posizione {i - 1} e {i}");
+        trovata = true;
+    }
+}
+if (!trovata)
+{
+    Console.WriteLine("Nessuna vocale consecutiva");
+}
