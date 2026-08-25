@@ -66,9 +66,21 @@ Console.WriteLine("Inserire lunghezza array: ");
 int lungArray=int.Parse(Console.ReadLine());
 int [] array = new int [lungArray];
 somma=0;
-for(int i; i < lungArray; i++)
+for(int i=0; i < lungArray; i++)
 {
-    Console.WriteLine($"Inserisci elemento in posizione: {lungArray}");
+    Console.WriteLine($"Inserisci elemento in posizione: {i}");
     array[i]=int.Parse(Console.ReadLine());
     somma+=array[i];
 }
+Console.WriteLine($"La somma dell'array è: {somma}");
+
+//CHECK STRINGA PALINDROMA
+string parola = "anna";
+string rovesciata = "";
+
+for (int i = parola.Length - 1; i >= 0; i--)
+{
+    rovesciata += parola[i];
+}
+
+Console.WriteLine(parola == rovesciata ? "È palindroma" : "Non è palindroma");
