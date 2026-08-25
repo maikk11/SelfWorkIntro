@@ -43,3 +43,9 @@ media=(double)somma/num_pari;
 mediaDispari=(double)sommaDispari/numDispari;
 Console.WriteLine($"Media numeri pari: {media}");
 Console.WriteLine($"Media numeri diapsri: {mediaDispari}");
+
+//STAMPA VALORI IN POSIZIONE PARI IN UN ARRAY
+for(int i; i<numeri.Length; i += 2)
+{
+    Console.WriteLine($"{numeri[i]}");
+}
