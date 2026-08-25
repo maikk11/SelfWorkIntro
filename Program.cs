@@ -49,3 +49,14 @@ for(int i; i<numeri.Length; i += 2)
 {
     Console.WriteLine($"{numeri[i]}");
 }
+
+//STAMPARE ELEMENTO MAGGIORE IN UN ARRAY
+int massimo = numeri[0];
+for (int i = 1; i < numeri.Length; i++)
+{
+    if (numeri[i] > massimo)
+    {
+        massimo = numeri[i];
+    }
+}
+Console.WriteLine($"Il valore massimo è {massimo}");
