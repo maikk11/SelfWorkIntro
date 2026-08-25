@@ -60,3 +60,15 @@ for (int i = 1; i < numeri.Length; i++)
     }
 }
 Console.WriteLine($"Il valore massimo è {massimo}");
+
+//CREAZIONE ARRAY DA UTENTE + SOMMATORIA
+Console.WriteLine("Inserire lunghezza array: ");
+int lungArray=int.Parse(Console.ReadLine());
+int [] array = new int [lungArray];
+somma=0;
+for(int i; i < lungArray; i++)
+{
+    Console.WriteLine($"Inserisci elemento in posizione: {lungArray}");
+    array[i]=int.Parse(Console.ReadLine());
+    somma+=array[i];
+}
