@@ -31,7 +31,7 @@ for(int i=0; i<numeri.Length; i++)
     if (numeri[i] % 2 == 0)
     {
         somma+=numeri[i];
-        num_pari++;
+        numPari++;
     }
     else
     {
@@ -39,13 +39,13 @@ for(int i=0; i<numeri.Length; i++)
         numDispari++;
     }
 }
-media=(double)somma/num_pari;
+media=(double)somma/numPari;
 mediaDispari=(double)sommaDispari/numDispari;
 Console.WriteLine($"Media numeri pari: {media}");
-Console.WriteLine($"Media numeri diapsri: {mediaDispari}");
+Console.WriteLine($"Media numeri dispari: {mediaDispari}");
 
 //STAMPA VALORI IN POSIZIONE PARI IN UN ARRAY
-for(int i; i<numeri.Length; i += 2)
+for(int i=0; i<numeri.Length; i += 2)
 {
     Console.WriteLine($"{numeri[i]}");
 }
@@ -84,7 +84,7 @@ for (int i = parola.Length - 1; i >= 0; i--)
 Console.WriteLine(parola == rovesciata ? "È palindroma" : "Non è palindroma");
 
 //CHECK VOCALI RIPETUTE
-string parola = "aiuola";
+parola = "aiuola";
 string vocali = "aeiou";
 bool trovata = false;
 for (int i = 1; i < parola.Length; i++)
